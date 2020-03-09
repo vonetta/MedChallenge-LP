@@ -1,7 +1,14 @@
-body {
-  font-family: "adobe-clean", sans-serif;
+@font-face {
+  font-family: "proxima_novaregular";
+  src: url("/font/proximanova-reg-webfont.woff2") format("woff2"),
+    url("/font/proximanova-reg-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
+body {
+  font-family: "proxima_novaregular";
+}
 .med-logos {
   width: 50%;
 }
@@ -10,6 +17,7 @@ body {
   margin: auto;
   display: block;
 }
+
 .wrapper {
   max-width: 1000px;
   margin: auto;
@@ -19,19 +27,26 @@ img {
   width: 100%;
 }
 
+li {
+  margin-bottom: 0.2em;
+}
+
 .main-content {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
 }
 
 .main-content section {
   width: 100%;
 }
 
+p {
+  font-size: 18px;
+}
+
 @media only screen and (min-width: 600px) {
   .main-content section {
-    width: 46%;
-    padding: 2%;
+    width: 42%;
+    padding: 4%;
   }
 }
