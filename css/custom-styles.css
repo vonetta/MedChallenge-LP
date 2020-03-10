@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "proxima_novaregular";
+  font-family: "proxima_novaregular", sans-serif;
 }
 .med-logos {
   width: 50%;
