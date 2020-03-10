@@ -3,27 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
     <link rel="stylesheet" href="./css/custom-styles.css" />
     <title>MedChallenge</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="slideshow-container">
-        <!-- images -->
-        <section class="slides">
-          <img
-            src="https://via.placeholder.com/1195x440.png?text=Placeholder Image 3 https://placeholder.com/"
-            alt=""
-          />
-        </section>
+      <div
+        class="slideshow-container"
+        data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'
+      >
+        <button
+          type="button"
+          data-role="none"
+          class="slick-prev slick-arrow"
+          aria-label="Previous"
+          role="button"
+          style="display: block;"
+        >
+          Previous
+        </button>
+        <div>
+          <a href="#" target="_blank">
+            <img src="./images/item4.png" alt="" />
+          </a>
+        </div>
+        <div>
+          <a href="#" target="_blank">
+            <img src="./images/item1.png" alt="" />
+          </a>
+        </div>
+        <div>
+          <a href="#" option="_blank">
+            <img src="./images/item2.png" alt="" />
+          </a>
+        </div>
+        <div>
+          <a href="#" option="_blank">
+            <img src="./images/item3.png" alt="" />
+          </a>
+        </div>
+        <button
+          type="button"
+          data-role="none"
+          class="slick-next slick-arrow"
+          aria-label="Next"
+          role="button"
+          style="display: block;"
+        >
+          Next
+        </button>
       </div>
-
       <div class="main-content">
-        <section>
+        <section class="one">
           <img src="./images/MedChallenge.svg" alt="" class="med-logos" />
           <br />
-          <br />
+
           <p>
             MedChallenge is a quick, fun, and eay-to-use educational game for
             medical professionals. Practice your skills in challenges against
@@ -38,20 +85,34 @@
             </li>
           </ul>
         </section>
-        <section>
-          <img src="./images/Medscape 25.svg" alt="" class="med-logos center" />
+        <section class="two">
+          <img src="./images/Medscape 25.svg" alt="" class="med-logos" />
           <br />
-          <video
-            controls
-            poster="https://via.placeholder.com/300x200.png?text=Placeholder
-          Image 3 https://placeholder.com/"
-          >
-            <source src="movie.mp4" type="video/mp4" />
-
-            Your browser does not support the video tag.
+          <video width="450" height="253">
+            <source src=http://techslides.com/demos/sample-videos/small.webm
+            type=video/webm> <source
+            src=http://techslides.com/demos/sample-videos/small.ogv
+            type=video/ogg> <source
+            src=http://techslides.com/demos/sample-videos/small.mp4
+            type=video/mp4> <source
+            src=http://techslides.com/demos/sample-videos/small.3gp
+            type=video/3gp> /> Your browser does not support the video tag.
           </video>
         </section>
       </div>
     </div>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/custom-script.js"></script>
   </body>
 </html>
